@@ -1,13 +1,4 @@
-```
- _____    _          _              _____                 ___  ___           _                 ______
-|  ___|  | |        (_)            /  __ \       ___      |  \/  |          (_)                |  _  \
-| |__  __| |_      ___  __ _  ___  | /  \/      ( _ )     | .  . | __ ___  ___ _ __ ___   ___  | | | |
-|  __|/ _` \ \ /\ / / |/ _` |/ _ \ | |          / _ \/\   | |\/| |/ _` \ \/ / | '_ ` _ \ / _ \ | | | |
-| |__| (_| |\ V  V /| | (_| |  __/ | \__/\_    | (_>  <   | |  | | (_| |>  <| | | | | | |  __/ | |/ /
-\____/\__,_| \_/\_/ |_|\__, |\___|  \____(_)    \___/\/   \_|  |_/\__,_/_/\_\_|_| |_| |_|\___| |___(_)
-                        __/ |
-                       |___/
-```
+# Caml in Caml
 
 
 > "Cet intérêt, nous l'appelons passion lorsque, refoulant tout autre intérêt ou but, l'individualité entière se projette sur un objectif avec toutes les fibres de son vouloir intérieur et concentre dans ce but tout ses forces et tous ses besoins. Rien de grand ne s'est accompli sans passion." -- __Hegel__
@@ -36,7 +27,7 @@ Exécuter la commande make à la racine du projet aura pour effet de compiler la
 
 La documentation se trouve dans le dossier doc. Quelques informations complémentaires écrites à la main sont présentes ainsi que la documentation générée par ocamldoc lors de la compilation.
 
-## Remarques -- rendu 4
+## Remarques
 
 Nous avons implémenté une machine à pile qui gère les parties de fouine demandées : fonction récursives, aspects impératifs et exceptions et les nuplets. En bonus, nous avons choisi de faire de l'inférence de types.
 
@@ -117,24 +108,3 @@ L'option `-disptype` affiche le type de sortie d'un programme (et vérifie la co
 - Nous avons corrigé une partie importante des traductions. Un problème persiste cependant lorsque l'on effectue la traduction -ER car nos fonctions de gestion de la mémoire sont écrites en fouine et ne passent pas la traduction en continuation (question de pattern matching etc...). (Nous n'avions pas vu ce problème lors du rendu précédent)
 - Nous avons aussi effectué un "fix" rapide pour coller aux consignes pour la syntaxe des exceptions: (E x).
 - Les tests sont dans différents sous-dossiers de tests. `machine` correspond aux tests de la machine à pile, `manual` aux tests nécessitant une correction manuelle, `simples` les tests pouvant être corrigés par OCaml, `trans_excep` les tests pour la traduction -E et `trans_imp` ceux pour la traduction impérative. Des scripts bash pour chaque dossier sont fournis.
-
-
-
-## Répartition de travail.
-
-Comme d'habitude, nous insistons sur le fait que nous travaillons généralement en échangeant sur toutes les difficultés que nous rencontrons, voire nous travaillons autour de la même feuille et du même clavier.
-
-Fait par Maxime
-- L'inférence de types
-- Débuggage des traductions
-
-Fait par Edwige
-- La machine
-- Lecture du sujet
-- Readme
-
-Fait par Alain
-- Thérapie de couple
-
-Fait par Totoro
-- Debug
